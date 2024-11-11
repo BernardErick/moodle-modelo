@@ -15,6 +15,7 @@ services:
       - "3306:3306"
     volumes:
       - ./db/moodledb:/var/lib/mysql 
+      - ./db/moodledata:/var/moodle_shared/moodledata
     cap_add:
       - SYS_NICE
   ava: 
